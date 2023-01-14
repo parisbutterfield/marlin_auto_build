@@ -13,6 +13,8 @@ inputs:
     default: ${{ github.repository }}
   actor:
     default: ${{ github.actor }}
+    
+permissions: write-all
 
 runs:
   using: "composite"
