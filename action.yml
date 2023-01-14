@@ -38,7 +38,7 @@ runs:
       shell: bash
     - run: cd marlin_auto_build && npm run build
       shell: bash
-    - run: cd marlin_auto_build && node --verbose ./lib/runner.js --color
+    - run: cd marlin_auto_build && node ./lib/runner.js --color
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
